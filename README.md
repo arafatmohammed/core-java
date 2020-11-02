@@ -75,11 +75,14 @@ Variables are identity we give to a memory location/locations where our data is 
 
 
 Syntax:
+```
 data_type identity;
+```
 
 Example:
+```
 int a = 100;
-
+```
 
 Non-static variables in a Bank app will be accountNumber, balance. They are object level variables. 
 
@@ -90,25 +93,27 @@ Static Variables examples are bankName, something that is common across object i
 A set of programming instructions, that take some input and provide an output.
 
 Syntax:
+```
 return_type identity(arglist)
 
 {
 
 }
-
+```
 Example:
+```
 int add(int a, int b)
 {
     int sum = a+b;
     return sum;
 }
-
+```
 
 In programming language, the communication happens between methods, the methods call each other. 
 
 There can only be 4 types of methods:
 
-void methodName(void) -  Methods that don't have any arguments, nor do they return anything
-int methodName(void) - Methods that do not have any  input but produce output
-int methodName(int) - Methods have input and produce some output
-void methodName(int) - Methods that take input but they don't return output
+1. void methodName(void) -  Methods that don't have any arguments, nor do they return anything
+2. int methodName(void) - Methods that do not have any  input but produce output
+3. int methodName(int) - Methods have input and produce some output
+4. void methodName(int) - Methods that take input but they don't return output
