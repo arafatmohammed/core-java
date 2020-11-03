@@ -142,5 +142,50 @@ If we used "static", that method can be invoked by using class name, meaning Hel
 ## Static and Non Static Context
 
 Static - Class Level - Can be used in entire class
+
 Non Static - Object Level - Can be used per object
 
+## Static Blocks
+
+```
+	static {
+		System.out.println("Static Block");
+	}	
+```
+
+This is executed/loaded even before the main method. In case of multiple Static blocks, the first one(in order) gets implemented/loaded first.
+
+## Static Methods
+```
+    // Static Method
+	static void method1() {
+		System.out.println("Inside method1");
+	}
+```    
+
+## Static Variables
+```
+
+public class StaticVariables {
+	
+	static int num; // Static Variable
+
+	public static void main(String[] args) {
+		System.out.println(StaticVariables.num);
+	}
+}
+```
+
+## Non Static Members
+Four types of Non static members:
+
+1. Non Static Variabe
+2. Non Static Block
+3. Non Static User Method
+4. Constructor
+
+These are similar to Static members, except for Constructor, this takes the place of the main method.
+
+To access these four members, we need to create an object of a class. And we can create these objects in any of Main Mehod, or a Static Block or a User-defined Method. 
+
+Key difference between Static Blocks and Non Static Blocks is that the non static blocks get executed every time we create an object so are the constructors whereas the static blocks are only executed once when the class is loaded.
