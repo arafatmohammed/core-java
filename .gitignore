@@ -1,0 +1,46 @@
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+version.txt
+src/main/resources/META-INF
+
+out/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+temp-embedded-postgres/
+.scannerwork/
+*.DS_Store
+
+# Logs #
+*.log
+
+### Python ###
+__pycache__
+*.db
+*.pyc
+.vscode
+venv/
+**/coverage.xml
+**/.coverage
+*.egg-info/
+
