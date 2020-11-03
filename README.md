@@ -117,3 +117,30 @@ There can only be 4 types of methods:
 2. int methodName(void) - Methods that do not have any  input but produce output
 3. int methodName(int) - Methods have input and produce some output
 4. void methodName(int) - Methods that take input but they don't return output
+
+
+```
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+
+}
+```
+
+public  - access specifiers (private, protected)
+class - keyword used to define a class
+HelloWorld - identity given to class
+public static void main(String[] args) - starting point of every Java program
+
+If we used "static", that method can be invoked by using class name, meaning HelloWorld.java will directly run the program
+
+(String[] args) - Arguments to use in the method
+
+## Static and Non Static Context
+
+Static - Class Level - Can be used in entire class
+Non Static - Object Level - Can be used per object
+
