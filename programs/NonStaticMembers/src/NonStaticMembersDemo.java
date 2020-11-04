@@ -6,6 +6,7 @@ public class NonStaticMembersDemo {
 		// This method is a constructor, this does not have a return type. It can take arguments.
 		System.out.println("Inside the constructor");
 	}
+		
 	
 	{
 		// Non-Static Block
@@ -14,13 +15,17 @@ public class NonStaticMembersDemo {
 	
 	public static void main(String[] args) {
 		System.out.println("inside the main method");
-		new NonStaticMembersDemo();
-		new NonStaticMembersDemo();
-		new NonStaticMembersDemo();
+		NonStaticMembersDemo obj = new NonStaticMembersDemo();
+		
+		obj.doSomething();
+		
 	}
 	
 	static {
 		System.out.println("Inside the static block");
 	}
 	
+	void doSomething() {
+		System.out.println("Inside doSomething");
+	}
 }

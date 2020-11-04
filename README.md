@@ -189,3 +189,16 @@ These are similar to Static members, except for Constructor, this takes the plac
 To access these four members, we need to create an object of a class. And we can create these objects in any of Main Mehod, or a Static Block or a User-defined Method. 
 
 Key difference between Static Blocks and Non Static Blocks is that the non static blocks get executed every time we create an object so are the constructors whereas the static blocks are only executed once when the class is loaded.
+
+If Java Compiler does not find a Constructor, it will automatically create one for us. This is called a Default Constructor.
+
+## this Keyword
+"this" is used to refer objetc's variables and methods
+Can only be used in Non static context, cannot use it in Static block or a main method
+
+Static Members vs Non Static Members:
+
+Static M. belong to a class, whereas Non-Static Members belong to the object
+Static M. can be accessed using Class Name, whereas Non-Static Members accessed using the object name
+Static block is executed at the time of class loading, non-static . are executed at the time of object creation and before the constructor is invoked.
+Memory is allocated and variables are initialized during class loading, Non-static members memory allocation happens at the time of object creation.
