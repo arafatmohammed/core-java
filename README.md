@@ -202,3 +202,105 @@ Static M. belong to a class, whereas Non-Static Members belong to the object
 Static M. can be accessed using Class Name, whereas Non-Static Members accessed using the object name
 Static block is executed at the time of class loading, non-static . are executed at the time of object creation and before the constructor is invoked.
 Memory is allocated and variables are initialized during class loading, Non-static members memory allocation happens at the time of object creation.
+
+## Data Types
+
+Primitive Data Types: byte, short, int, long, char, float, double, boolean
+
+Reference Data Types: class, arrary, string, etc
+
+There's many Primitive Data Types because they offer different ranges of values
+
+
+| Type | Size | Limits/Range |
+| :---: | :---: | :---: |
+| byte | 1 byte | -128 to + 128 | 
+| short | 2 bytes | -32768 to +32767 |
+| int | 4 bytes | -2^31 to +2^31-1 | 
+| long | 8 bytes | -2^63 to +2^63-1 | 
+| char | 2 bytes | 0 to 65535 | 
+| float | 4 bytes | ±3.40282347E+38F | 
+| double | 8 bytes | ±1.79769313486231570E+308 | 
+| boolean | not defined | precisely true of false | 
+
+NOTE:
+
+Character should be initialized in single quote
+
+Floating point should end with an "f"
+
+When you are adding/subtracting two byte variable, the variable declared should be "int" and not "byte".
+
+## Type Casting
+
+Primitive Type Casting:
+
+Conversion of data from one type to another is called Type Casting
+
+Casting can be implicit(happens automatically) and explicit(dev should do some manual work)
+
+Implicit: lower -> higher, byte ->int
+
+Explicit: higher -> lower, int -> byte
+
+Reference Type Casting:
+
+Also hads Implicit and Explicit, done through inheritance
+
+Implicit: child -> parent
+
+Explicit: parent -> child
+
+## Explicit Type Casting : Higher data type to lower data type
+
+```
+int i = 100;
+byte b = i; // Byte cannot be converted to int until casted
+byte b = (byte) i; // explicit type casting from higher to lower type
+```
+
+## Run Shorcut in Eclipse on Mac
+
+```
+Fn+Cmd+Shift+F11
+```
+
+## Wrapper Classes
+
+Help us convert `Primitive Types` to `Object Types`
+
+We need this when working with Collections API
+
+Each primitive type has a corresponding class, the instanace of this class will represent that particular primitive type as a object type
+
+
+| Primitive | Wrapper Classes |
+| :---: | :---: | :---: |
+| byte | Byte |
+| short | Short |
+| int | Integer |
+| long | Long |
+| char | Character |
+| float | Float |
+| double | Double |
+| boolean | Boolean |
+
+Primitive to Object --> boxing
+
+Object to Primitive --> unboxing
+
+Primitive to String
+
+String to Primitive
+
+Object to String
+
+String to Object
+
+## Autoboxing and Unboxing
+
+`Autoboxing` : Conversion of primitive to wrapper
+
+`Unboxing` : Conversion of wrapper to primitive
+
+
