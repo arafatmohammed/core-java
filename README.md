@@ -303,4 +303,67 @@ String to Object
 
 `Unboxing` : Conversion of wrapper to primitive
 
+## Operators and Assignments
+
+Unary:
+Increment (++) and Decrement(--)
+
+y = ++x  // Pre Increment 
+
+y = x++  // Post Increment
+
+y = --x  // Pre Increment 
+
+y = x--  // Post Increment
+
+We cannot apply increments or decrements operatotrs on constants or literals. Ex: 10++ is not possible. It can only be assigned to variables.
+
+
+## Arithmetic Operators
+
++, -, *, /, %
+
+## String Concatenation Operator
+
+The only operator in JAVA that is overloaded is the "+" operator. When we use them with numbers it adds then, when we use it with strings, it appends them.
+
+## Comparison Operator
+```
+< <= > >=
+==
+!=
+```
+
+## Bitwise Operator
+
+& returns true if both arguments are true
+
+| returns true if at least argument is true
+
+^ returns true if both arguments are different
+
+## Bitwise Unary Complement Operator
+
+~ ---> 10001 = 01110
+
+! ---> Boolean Complement Operator ---> true to false ; false to true
+
+## Shortcircuit Operator
+
+Improve the performance of our application
+
+&, | --> Both the args should be evaluated. Relatively performance is slow. Applicable for both integral and boolena types
+
+&&, || --> Second arg evaluation is optional. Faster perfomance. Boolean Only
+
+## Ternary Operator
+
+```
+testExpression ? value1 : value2
+```
+
+If `testExpression` is true, then the value will be value1 (left hand side of the colon)
+
+If `testExpression` is false, then the value will be value2 (right hand side of the colon)
+
 
